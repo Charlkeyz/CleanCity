@@ -1,0 +1,39 @@
+.navbar{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+    margin: 20px;
+}
+.navbar1{
+    display: flex;
+    padding-left: 200px;
+    align-items: center;
+    gap:10px;
+    /* border: 1px solid black; */
+
+}
+.list{
+    display: flex;
+    gap: 30px;
+}
+.navbar2{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding-right: 200px;
+    /* border: 1px solid black; */
+    
+}
+
+.cleanCity{
+    font-family: "SF Pro Text";
+    font-weight: bolder;
+    color: #0486A8;
+    font-size: 24px;
+    padding-right: 50px;
+}
+span{
+    color: #00CA5B;
+}

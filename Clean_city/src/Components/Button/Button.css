@@ -1,0 +1,12 @@
+button{
+    display: flex;
+    height: 42px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    background-color:#00CA5B;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
