@@ -1,18 +1,28 @@
 .navbar{
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-between;
     align-items: center;
     /* border: 1px solid black; */
-    margin: 20px;
+    padding: 20px;
+    background: #FFF;
+    box-shadow: 0px -5px 30px 0px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 100;
 }
 .navbar1{
     display: flex;
     padding-left: 200px;
     align-items: center;
     gap:10px;
+    cursor: pointer;
     /* border: 1px solid black; */
 
+}
+ul:hover{
+    color: #0486A8;
+    transition: 1s;
 }
 .list{
     display: flex;
@@ -26,6 +36,11 @@
     /* border: 1px solid black; */
     
 }
+.log-in:hover{
+    color: #0486A8;
+    transition: 1s;
+    cursor: pointer;
+}
 
 .cleanCity{
     font-family: "SF Pro Text";
@@ -34,6 +49,12 @@
     font-size: 24px;
     padding-right: 50px;
 }
-span{
+.city{
     color: #00CA5B;
+}
+.ul{
+    /* border: 1px solid black; */
+    position: relative;
+    top: 3px;
+
 }

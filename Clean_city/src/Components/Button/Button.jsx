@@ -1,8 +1,10 @@
+/* eslint-disable react/prop-types */
 import './Button.css'
-const Button = () => {
+const Button = (props) => {
+    const {styling, children} = props
     return(
         <div className="btn">
-            <button>Create Account</button>
+            <button className={styling} >{children}</button>
         </div>
     )
 }
