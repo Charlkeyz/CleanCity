@@ -4,6 +4,7 @@
 // import './App.css'
 import Card from './Components/Card/Card'
 import Navbar from './Components/Navbar/Navbar'
+import Faq from './Pages/FAQ/Faq'
 import Home from './Pages/Home/Home'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Navbar/>
       <Home/>
       <Card/>
+      <Faq/>
     </>
   )
 }

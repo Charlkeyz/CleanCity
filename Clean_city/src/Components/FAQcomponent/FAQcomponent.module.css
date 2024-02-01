@@ -1,0 +1,36 @@
+.faq_component{
+    width: 1048px;
+    height: 102px;
+    border-radius: 20px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 30px;
+
+}
+.faq_component:hover{
+    color: #0486A8;
+    transition: 1s;
+    /* height: 300px; */
+    
+    
+
+}
+.faq_component > p{
+    font-size: 28px;
+    font-weight: 600;
+}
+.arrowDown{
+    width: 40px;
+    height: 40px;
+    /* transform: rotate(180deg) ; */
+    /* border: 1px solid black; */    
+}
+.moveUp{
+    height: 300px;   
+}
+.moveDown{
+    transform: rotate(-180deg);
+    transition: transform 0.5s ease;
+}

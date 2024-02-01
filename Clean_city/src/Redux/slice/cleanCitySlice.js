@@ -4,7 +4,8 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
     resourcesState: false,
     servicesState: false,
-    supportState: false
+    supportState: false,
+    isOpenFaq: false
 }
 
 export const cleanCitySlice = createSlice({
@@ -20,8 +21,11 @@ export const cleanCitySlice = createSlice({
         },
         setSupportState:(state, action)=> {
             state.supportState = action.payload
+        },
+        setIsOpenFaq:(state, action) => {
+            state.isOpenFaq =   action.payload
         }
     }
 })
-export const {setResourcesState, setServiceState, setSupportState} = cleanCitySlice.actions
+export const {setResourcesState, setServiceState, setSupportState, setIsOpenFaq} = cleanCitySlice.actions
 export default cleanCitySlice.reducer
