@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_container{
+    display: flex;
+    width: 1440px;
+    padding: 126px 129px 125px 129px;
+    justify-content: center;
+    align-items: center;
+    gap: 86px;
+    /* border: 1px solid black; */
+}
+.card_container.image{
+    /* border: 1px solid red; */
+    flex-direction: row-reverse;
+}
+.text_container{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.text_container > h1{
+    font-size: 48px;
+}
+.text_container > p{
+    font-weight: 500;
+    font-size: 20px;
+}

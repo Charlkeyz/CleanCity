@@ -1,7 +1,7 @@
 .homepage{
     width: 100vw;
     height: 150vh;
-    background: url("./Background_image.jpg");
+    background: url("../BackgroundImages/Background_image.jpg");
     background-color: lightgrey 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,7 +16,7 @@
     gap: 48px; */
     border: 1px solid white;
 }
-.lagos{
+.container1{
     font-family: "SF Pro Text";
     color: #fff;
     font-size: 40px;
@@ -30,7 +30,7 @@
 
     
 }
-.discover{ 
+.container2{ 
     font-size: 20px;
     font-style: normal;
     font-weight: 100;

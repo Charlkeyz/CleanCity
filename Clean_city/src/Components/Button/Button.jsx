@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
-import './Button.css'
+import styles from './Button.module.css'
 const Button = (props) => {
     const {styling, children} = props
     return(
-        <div className="btn">
+        <div className={styles.btn}>
             <button className={styling} >{children}</button>
         </div>
     )

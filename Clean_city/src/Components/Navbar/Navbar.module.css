@@ -20,7 +20,7 @@
     /* border: 1px solid black; */
 
 }
-ul:hover{
+.dropdown:hover{
     color: #0486A8;
     transition: 1s;
 }
@@ -33,13 +33,15 @@ ul:hover{
     gap: 30px;
     align-items: center;
     padding-right: 200px;
+    
     /* border: 1px solid black; */
     
 }
-.log-in:hover{
+.log_in:hover{
     color: #0486A8;
     transition: 1s;
     cursor: pointer;
+    font-weight: bolder;
 }
 
 .cleanCity{
@@ -52,9 +54,8 @@ ul:hover{
 .city{
     color: #00CA5B;
 }
-.ul{
+ul>span{
     /* border: 1px solid black; */
     position: relative;
-    top: 3px;
-
+    top: 4px;
 }

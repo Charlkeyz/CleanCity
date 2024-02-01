@@ -2,6 +2,7 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
+import Card from './Components/Card/Card'
 import Navbar from './Components/Navbar/Navbar'
 import Home from './Pages/Home/Home'
 
@@ -12,6 +13,7 @@ function App() {
     <>
       <Navbar/>
       <Home/>
+      <Card/>
     </>
   )
 }

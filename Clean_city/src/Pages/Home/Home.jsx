@@ -1,21 +1,22 @@
 import Button from '../../Components/Button/Button';
-import './Home.css'
+import styles from './Home.module.css'
 const Home = () => {
-    const styling = "btn_2"
+    const styling = styles.btn_2
        
    
    
     return(
         <>
-        <div className="homepage" >  
-                <div className='homepage_container'>
-                    <div className='lagos'>
+        <div className={styles.homepage} >  
+                <div className={styles.homepage_container}>
+                    
+                    <div className={styles.container1}>
                         <h1>Experience a</h1>
                         <h1>cleaner Lagos</h1>
-                        <p className='discover'>Discover the power of responsible waste management and <br />
+                        <p className={styles.container2}>Discover the power of responsible waste management and <br />
                         recycling right at your fingertips.</p>
                     </div>
-                    <div className='btn_1'>
+                    <div className={styles.btn_1}>
                         <Button>Get started today</Button>
                         <Button styling = {styling}>See how it works</Button>
                     </div>
