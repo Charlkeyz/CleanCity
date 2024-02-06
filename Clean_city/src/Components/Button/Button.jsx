@@ -4,7 +4,7 @@ const Button = (props) => {
     const {styling, children} = props
     return(
         <div className={styles.btn}>
-            <button className={styling} >{children}</button>
+            <button className={styling} >{children} click</button>
         </div>
     )
 }
