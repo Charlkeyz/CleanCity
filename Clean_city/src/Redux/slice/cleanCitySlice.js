@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { createSlice } from "@reduxjs/toolkit";
 
 
@@ -5,7 +6,7 @@ const initialState = {
     resourcesState: false,
     servicesState: false,
     supportState: false,
-    isOpenFaq: false
+    isOpenFaq: [false, false, false, false]
 }
 
 export const cleanCitySlice = createSlice({
@@ -23,7 +24,8 @@ export const cleanCitySlice = createSlice({
             state.supportState = action.payload
         },
         setIsOpenFaq:(state, action) => {
-            state.isOpenFaq =   action.payload
+            const {index, isOpen} = action.payload
+            state.isOpenFaq[index] =   isOpen
         }
     }
 })

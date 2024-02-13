@@ -26,7 +26,8 @@
 }
 .list{
     display: flex;
-    gap: 30px;
+    gap: 70px;
+    font-size: 17px;
 }
 .navbar2{
     display: flex;
@@ -45,7 +46,7 @@
 }
 
 .cleanCity{
-    font-family: "SF Pro Text";
+    font-family: "SF Pro";
     font-weight: bolder;
     color: #0486A8;
     font-size: 24px;

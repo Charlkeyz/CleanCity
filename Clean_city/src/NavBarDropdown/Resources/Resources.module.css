@@ -1,6 +1,6 @@
 .resources{
-    width: 200px;
-    height: 170px;
+    width: 300px;
+    height: 160px;
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
     /* border: 1px solid black; */
     position: absolute;
@@ -13,6 +13,8 @@ ul{
     list-style: none;
     color: black;
     margin: 0;
+    padding: 12.5px;
+    font-weight: bold;
 }
 li{
     /* border: 1px solid black; */
@@ -20,7 +22,7 @@ li{
 
     
 }
-li:hover{
+.resources > ul > li:hover{
     width: 100%;
     border-radius: 10px;
     background-color: #EBEBEB;

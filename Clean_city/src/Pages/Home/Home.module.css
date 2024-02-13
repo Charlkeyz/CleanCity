@@ -1,6 +1,6 @@
 .homepage{
     width: 100vw;
-    height: 150vh;
+    height: 100vh;
     background: url("../BackgroundImages/Background_image.jpg");
     background-color: lightgrey 50%;
     background-repeat: no-repeat;
@@ -9,22 +9,18 @@
     background-position: center;
     /* border: 1px solid black; */
 }
-.homepage_container{
-    /* display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 48px; */
-    border: 1px solid white;
-}
+/* .homepage_container{
+    margin-bottom: 50%;
+} */
 .container1{
-    font-family: "SF Pro Text";
+    font-family: "SF Pro";
     color: #fff;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     /* line-height: 120%; */
     font-style: normal;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 12%;
     /* border: 1px solid white; */
 
@@ -36,17 +32,17 @@
     font-weight: 100;
     line-height: 150%;
     /* border: 1px solid white; */
-    margin-top: 20px;
+    margin-top: 15px;
 }
 .btn_1{
     display: flex;
     align-items: center;
     padding: 20px;
     position: absolute;
-    top: 80%;
+    top: 65%;
     gap: 20px;
     /* border: 1px solid white; */
-    left: 11%;
+    left: 10.7%;
 }
 .btn_2{
     background-color: unset;

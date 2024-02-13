@@ -1,0 +1,88 @@
+.footer_container{
+    width: 100vw;
+    height: 500px;
+    background-color: #0486A8; 
+}
+.footerList{
+    display: flex;
+    /* border: 1px solid black; */
+    width: 1500px;
+    position: relative;
+    top: 40px;
+    left: 300px;
+    gap: 30px;
+    
+}
+.footerList > ul{
+    color: white;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    /* border: 1px solid black; */
+
+}
+.footerList > ul > li:nth-child(1){
+    font-size: 23px;
+    font-weight: 700;
+}
+.socialMediaLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 200px;
+    bottom: 70px;
+    color: white;
+    /* border: 1px solid black; */
+    gap: 30px;
+}
+.facebook{
+    width: 50px;
+    height: 30px;
+}
+.twitter{
+    width: 50px;
+    height: 30px;
+}
+.instagram{
+    width: 50px;
+    height: 30px;
+}
+.youtube{
+    width: 50px;
+    height: 30px;
+}
+.tiktok{
+    width: 50px;
+    height: 30px;
+}
+.line{
+    /* display: block; */
+    width: 1470px;
+    height: 0px;
+    border: 1px solid white;
+    position: relative;
+    top: 100px;
+    left: 320px; 
+}
+.logo_footer{
+    display: flex;
+    gap: 10px;
+    /* border: 1px solid black; */
+    align-items: center;
+    width: 150px;
+    position: relative;
+    top: 150px;
+    left: 315px;  
+}
+.logo_footer > .cleanCity{
+    font-family: "SF Pro";
+    font-weight: bolder;
+    color: white;
+    font-size: 24px;
+    padding-right: 50px;
+    letter-spacing: 1px;
+}
+.logo_footer > .cleanCity > .city{
+    color: #00CA5B;
+}

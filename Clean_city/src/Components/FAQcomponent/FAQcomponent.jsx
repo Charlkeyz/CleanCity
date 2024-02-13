@@ -1,20 +1,29 @@
 /* eslint-disable react/prop-types */
 import styles from './FAQcomponent.module.css'
-// import { MdKeyboardArrowUp } from "react-icons/md";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 const FAQcomponent = (props) => {
-const {toggleArrowFunc, toggleArrow} = props
-    
-    
+
+    const {FaqList, toggleArrowFunc, toggleArrow} = props
+   
+
 
 
     return(
         <>
-            <div className={`${styles.faq_component} ${toggleArrow ? styles.moveUp: ""}`} onClick={toggleArrowFunc}>
-                <p>Type your questions here</p>
-                <MdOutlineKeyboardArrowDown className={`${styles.arrowDown} ${toggleArrow ? styles.moveDown: ""}`}/>
-            </div>
+            
+                {
+                    FaqList.map((faq, index)=> (
+                        <div key={index} className={`${styles.faq_component} ${toggleArrow[index] && styles.increaseHeight}`} onClick={()=>toggleArrowFunc(index)} >
+                            <p>{faq.question}</p>
+                            <p className={`${styles.noAnswer}   ${toggleArrow[index] && styles.increaseHeight}`}>{faq.answer}</p>
+
+                            <MdOutlineKeyboardArrowDown className={`${styles.arrowDown} ${ toggleArrow[index] && styles.arrowUp}`}/>
+                        </div>
+                    ))
+                }
+            
+            
         </>
     )
 }
