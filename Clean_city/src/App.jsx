@@ -2,25 +2,20 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
-import Card from './Components/Card/Card'
-import Footer from './Components/Footer/Footer'
-import Navbar from './Components/Navbar/Navbar'
-import Faq from './Pages/FAQ/Faq'
-import Home from './Pages/Home/Home'
-import MakeDifference from './Pages/MakeDifference/MakeDifference'
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import CreateAccount from './Pages/Sign-Up/SignUp'
+import LandingPage from './Pages/Landing Page/LandingPage'
 function App() {
 
 
   return (
-    <>
-      <Navbar/>
-      <Home/>
-      <Card/>
-      <Faq/>
-      <MakeDifference/>
-      <Footer/>
-    </>
+   <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<LandingPage/>}/>
+      <Route path='/Sign_up' element={<CreateAccount/>}/>
+    </Routes>
+   
+   </BrowserRouter>
   )
 }
 
