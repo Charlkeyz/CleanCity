@@ -7,6 +7,7 @@ import Services from '../../NavBarDropdown/Services/Services';
 import Support from '../../NavBarDropdown/Support/Support';
 import { useDispatch, useSelector } from 'react-redux';
 import { setResourcesState, setServiceState, setSupportState } from '../../Redux/slice/cleanCitySlice';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -52,7 +53,7 @@ const Navbar = () => {
                 </div>
                 <div className={styles.navbar2}>
                         <ul className={styles.log_in}>Log in</ul>
-                        <Button>Create Account</Button>
+                        <Link to="/Sign_up" style={{textDecoration: "none"}}><Button>Create Account</Button></Link>
                 </div>
 
                 

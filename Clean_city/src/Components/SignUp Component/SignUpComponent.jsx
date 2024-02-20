@@ -12,6 +12,7 @@ const SignUpComponent = () => {
             <input type="email" placeholder="Email address"/>
             <input type="password" placeholder="Choose password"/>
         </form>
+        
     </main>
   )
 }

@@ -1,10 +1,8 @@
+import { Link } from 'react-router-dom';
 import Button from '../../Components/Button/Button';
 import styles from './Home.module.css'
 const Home = () => {
-    const styling = styles.btn_2
        
-   
-   
     return(
         <>
         <div className={styles.homepage} >  
@@ -17,8 +15,10 @@ const Home = () => {
                         recycling right at your fingertips.</p>
                     </div>
                     <div className={styles.btn_1}>
-                        <Button>Get started today</Button>
-                        <Button styling = {styling}>See how it works</Button>
+                        <Link to="/Sign_up" style={{textDecoration: "none"}}>
+                            <Button>Get started today</Button>
+                        </Link>
+                        <Button btnStyling = "btn_2">See how it works</Button>
                     </div>
                 </div>
                 
