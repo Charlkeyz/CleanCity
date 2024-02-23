@@ -15,7 +15,7 @@ const Home = () => {
                         recycling right at your fingertips.</p>
                     </div>
                     <div className={styles.btn_1}>
-                        <Link to="/Sign_up" style={{textDecoration: "none"}}>
+                        <Link to="/sign_up" style={{textDecoration: "none"}}>
                             <Button>Get started today</Button>
                         </Link>
                         <Button btnStyling = "btn_2">See how it works</Button>

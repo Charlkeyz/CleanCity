@@ -2,6 +2,7 @@
  import { FcGoogle } from "react-icons/fc";
 import SignUpComponent from '../../Components/SignUp Component/SignUpComponent'
 import styles from './SignUp.module.css'
+import { Link } from 'react-router-dom';
  const SignUp = () => {
   return (
     <>
@@ -11,7 +12,9 @@ import styles from './SignUp.module.css'
             <div className={styles.create_account}>
               <SignUpComponent/>
               <div className={styles.buttons}>
-                <Button btnStyling = "create_account">Create your account</Button>
+                <Link to="/account_setup" style={{textDecoration: "none"}}>
+                  <Button btnStyling = "create_account">Create your account</Button>
+                </Link>
               </div>
               <div className={styles.continue}>
                   <div className={styles.line}></div>

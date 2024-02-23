@@ -47,3 +47,34 @@ button:hover{
     background-color: unset;
     border: 1px solid black;
 }
+.next_button{
+    width: 134px;
+    height: 61px;
+}
+.buildingBtn{
+    width: 136px;
+    height: 51px;
+    background-color: white;
+    color: black;
+    padding: 13px, 20px, 15px, 20px;
+    border: 1px solid black;
+    font-size: 15px;
+}
+.buildingBtn:hover{
+    background-color: #EBEBEB;
+    border: 1px solid #0486A8 ;
+}
+.wasteBtn{
+    width: 108px;
+    height: 51px;
+    background-color: white;
+    color: black;
+    padding: 13px, 20px, 15px, 20px;
+    border: 1px solid black;
+    font-size: 15px;
+}
+.wasteBtn:hover{
+    background-color: #EBEBEB;
+    border: 1px solid #0486A8 ;
+
+}

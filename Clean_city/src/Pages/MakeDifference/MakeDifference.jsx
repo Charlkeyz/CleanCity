@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
             <div className={styles.container}>
                 <h1>Ready to Make a Difference ?</h1>
                 <p>Start your journey towards a cleaner Lagos today</p>
-                <Link to="/Sign_up" style={{textDecoration: "none"}}>
+                <Link to="/sign_up" style={{textDecoration: "none"}}>
                   <Button>Get started today</Button>
                 </Link>
             </div>

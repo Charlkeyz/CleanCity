@@ -9,6 +9,12 @@ const Button = (props) => {
         btnStyles = styles.signUp_btn
     }else if(btnStyling === "googleBtn"){
         btnStyles = styles.googleSignIn
+    }else if(btnStyling === "next"){
+        btnStyles = styles.next_button
+    }else if(btnStyling === "building"){
+        btnStyles = styles.buildingBtn
+    }else if(btnStyling === "waste_btn"){
+        btnStyles = styles.wasteBtn
     }
     return(
         <div className={styles.btn}>
