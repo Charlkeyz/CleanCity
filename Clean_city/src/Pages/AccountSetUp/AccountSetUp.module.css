@@ -32,10 +32,10 @@
     gap: 20px;
 
 }
-.bar:nth-child(1){
+/* .account_tracker span:nth-child(1){
     background-color: #0486A8;
-}
-.bar{
+} */
+.account_tracker span{
     /* border: 1px solid black; */
     width: 500px;
     height: 10px;
@@ -49,13 +49,13 @@
     left: 130px;
 }
 .next_page{
-    /* border: 1px solid black; */
+    /* border: 1px solid black;    */
     display: flex;
-    position: relative;
+    position: absolute;
     /* margin: 230px 20px 0px 130px; */
-    width: 220px;
+    width: 600px;
     height: 64px;
-    top: 350px;
+    top: 750px;
     left: 130px;
     gap: 10px;    
 }
@@ -70,6 +70,15 @@
 }
 .next_page > span:hover{
     color: #0486A8;
+    cursor: pointer;
+}
+.arrow_container{
+    /* border: 1px solid black; */
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 90px;
+    left: 40px;
     cursor: pointer;
 }
 

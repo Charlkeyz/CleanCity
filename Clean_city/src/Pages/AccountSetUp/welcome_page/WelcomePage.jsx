@@ -3,7 +3,7 @@
 import styles from './WelcomePage.module.css'
 const WelcomePage = () => {
   return (
-    <main>
+    <main className={styles.welcomeStyling}>
         <section className={styles.welcome_container}>
             <h1>Welcome to Clean City! User Name</h1>
             <p>Let's set up your profile in a few easy steps!</p>

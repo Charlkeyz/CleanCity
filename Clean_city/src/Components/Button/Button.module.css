@@ -78,3 +78,7 @@ button:hover{
     border: 1px solid #0486A8 ;
 
 }
+.finish_btn{
+    width: 536px;
+    height: 64px;
+}

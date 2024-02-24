@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
 import styles from './Button.module.css'
 const Button = (props) => {
-    const {btnStyling, children} = props
-    let btnStyles 
+    const {btnStyling, children, next} = props
+    let btnStyles
+
     if(btnStyling === "btn_2"){
         btnStyles = styles.btn_2
     }else if(btnStyling === "create_account"){
@@ -15,10 +16,12 @@ const Button = (props) => {
         btnStyles = styles.buildingBtn
     }else if(btnStyling === "waste_btn"){
         btnStyles = styles.wasteBtn
+    }else if(btnStyling === "finish"){
+        btnStyles = styles.finish_btn
     }
     return(
         <div className={styles.btn}>
-            <button className={btnStyles} >{children}</button>
+            <button className={btnStyles} onClick={next}>{children}</button>
         </div>
     )
 }
