@@ -18,11 +18,13 @@ const Button = (props) => {
         btnStyles = styles.wasteBtn
     }else if(btnStyling === "finish"){
         btnStyles = styles.finish_btn
+    }else if(btnStyling === "log_in"){
+        btnStyles = styles.log_in_btn
     }
     return(
-        <div className={styles.btn}>
+        
             <button className={btnStyles} onClick={next}>{children}</button>
-        </div>
+    
     )
 }
 export default Button

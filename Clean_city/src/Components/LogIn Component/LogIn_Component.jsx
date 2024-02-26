@@ -1,11 +1,11 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useState } from 'react';
-import styles from './SignUpComponent.module.css'
+import styles from './LogIn_Component.module.css'
 import { IoMdEyeOff } from "react-icons/io";
 import { IoMdEye } from "react-icons/io";
 import { useDispatch, useSelector } from 'react-redux';
 import { setFormInput } from '../../Redux/slice/cleanCitySlice';
-import { Link } from 'react-router-dom';
-const SignUpComponent = () => {
+const LogIn_Component = () => {
   const [showPassword, setShowPassword] = useState(false)
   const dispatch = useDispatch()
   const inputForm = useSelector((state)=> state.Clean_City)
@@ -24,25 +24,12 @@ const SignUpComponent = () => {
 
   
   return (
-    <main className={styles.input_form}>
+    <main className={styles.log_in_form}>
         <section>
-            <h1>Create your account</h1>
-            <p>Already have an account? <Link to={'/log_in'} className={styles.log_in}><span>Log in</span></Link> </p>
+            <h1>Log in</h1>
+            <p>Don't have an account? <span>Sign Up</span> </p>
         </section>
         <form action="">
-            <input 
-              type="text" 
-              placeholder="First name"
-              name='name'
-              value={inputForm.name}
-              onInput={handleInputForm}/>
-            <input 
-              type="text" 
-              placeholder="Last name"
-              name='surname'
-              value={inputForm.surname}
-              onInput={handleInputForm}
-               />
             <input 
               type="email" 
               placeholder="Email address"
@@ -63,4 +50,4 @@ const SignUpComponent = () => {
     </main>
   )
 }
-export default SignUpComponent
+export default LogIn_Component

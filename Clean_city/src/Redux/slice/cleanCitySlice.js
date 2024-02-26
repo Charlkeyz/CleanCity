@@ -6,7 +6,13 @@ const initialState = {
     resourcesState: false,
     servicesState: false,
     supportState: false,
-    isOpenFaq: [false, false, false, false]
+    isOpenFaq: [false, false, false, false],
+    formInput: {
+        name: "",
+        surname: "",
+        email: "",
+        password: "",
+    }
 }
 
 export const cleanCitySlice = createSlice({
@@ -26,8 +32,12 @@ export const cleanCitySlice = createSlice({
         setIsOpenFaq:(state, action) => {
             const {index, isOpen} = action.payload
             state.isOpenFaq[index] =   isOpen
+        },
+        setFormInput:(state, action) => {
+            const {name, value } = action.payload
+            state.formInput[name] = value
         }
     }
 })
-export const {setResourcesState, setServiceState, setSupportState, setIsOpenFaq} = cleanCitySlice.actions
+export const {setResourcesState, setServiceState, setSupportState, setIsOpenFaq, setFormInput} = cleanCitySlice.actions
 export default cleanCitySlice.reducer

@@ -33,6 +33,9 @@ button:hover{
     width: 200%;
     /* border: 1px solid black; */
 }
+.log_in_btn{
+    width: 375%;
+}
 .googleSignIn{
     background-color: unset;
     display: flex;
@@ -81,4 +84,8 @@ button:hover{
 .finish_btn{
     width: 536px;
     height: 64px;
+
+}
+.finish_btn:hover{
+    transition: none;
 }

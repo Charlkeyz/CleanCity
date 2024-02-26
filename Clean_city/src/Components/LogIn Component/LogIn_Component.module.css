@@ -1,4 +1,4 @@
-.input_form{
+.log_in_form{
     width: 100%;
     height: 100%;
     display: flex;
@@ -6,32 +6,33 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
-    /* border: 1px solid black; */
     position: relative;
-    top: 80px;
+    bottom: 100px;
+    /* top: 0px; */
 }
-.input_form > section{
+.log_in_form > section{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    /* border: 1px solid black;     */
+
 }
-.input_form > section > h1{
+.log_in_form > section > h1{
     font-size: 30px;
 }
-.input_form > section > p{
+.log_in_form > section > p{
     color: grey;
 }
-.input_form > section > p > .log_in{
-    text-decoration: none;
+.log_in_form > section > p > span{
     color: black;
     font-weight: 500;
 }
-.input_form > section > p > .log_in:hover{
+.log_in_form > section > p > span:hover{
     cursor: pointer;
     color: #0486A8;
 }
-.input_form > form{
+.log_in_form > form{
     width: 100%;
     /* border: 1px solid black; */
     display: flex;
@@ -40,14 +41,14 @@
     align-items: center;
     gap: 10px;
 }
-.input_form > form > input{
+.log_in_form > form > input{
     width: 60%;
     height: 62px;
     border-radius: 10px;
     border: 2px solid grey;
     padding: 10px;
 }
-.input_form > form > input::placeholder{
+.log_in_form > form > input::placeholder{
     font-size: 17px;
 }
 .passwordEye{

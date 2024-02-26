@@ -4,6 +4,9 @@ import SignUpComponent from '../../Components/SignUp Component/SignUpComponent'
 import styles from './SignUp.module.css'
 import { Link } from 'react-router-dom';
  const SignUp = () => {
+
+
+  
   return (
     <>
         <main className={styles.sign_up_container}>
