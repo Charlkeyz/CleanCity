@@ -22,12 +22,12 @@
 .input_form > section > p{
     color: grey;
 }
-.input_form > section > p > .log_in{
+.log_in{
     text-decoration: none;
     color: black;
     font-weight: 500;
 }
-.input_form > section > p > .log_in:hover{
+.log_in:hover{
     cursor: pointer;
     color: #0486A8;
 }

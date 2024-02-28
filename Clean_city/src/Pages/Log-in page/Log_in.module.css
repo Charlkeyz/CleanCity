@@ -82,3 +82,9 @@
 .termsConditions > p > span{
     color: #0486A8;
 }
+@media screen and (max-width: 1440px) {
+    .log_in_account{
+        position: absolute;
+        left: 0px;
+    }
+}

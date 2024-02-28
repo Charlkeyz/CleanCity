@@ -18,7 +18,7 @@ const SignUpComponent = () => {
   function handleInputForm(e) {
     const {name, value} = e.target;
     dispatch(setFormInput({ name, value}))
-    console.log(inputForm.formInput)
+    // console.log(inputForm.formInput)
 
   }
 

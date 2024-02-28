@@ -18,6 +18,14 @@
     /* border: 1px solid black;     */
 
 }
+.log_in{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.log_in:hover{
+    color: #0486A8;
+}
 .log_in_form > section > h1{
     font-size: 30px;
 }

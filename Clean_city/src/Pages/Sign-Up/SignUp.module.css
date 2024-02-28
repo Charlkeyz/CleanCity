@@ -2,6 +2,7 @@
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 
@@ -81,4 +82,10 @@
 }
 .termsConditions > p > span{
     color: #0486A8;
+}
+@media screen and (max-width: 1440px) {
+    .create_account{
+        position: absolute;
+        left: 0px;
+    }
 }

@@ -5,6 +5,8 @@ import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import LogoFooter from '../../assets/logo1.svg'
+// import { PiCopyrightBold } from "react-icons/pi";
+import { MdOutlineCopyright } from "react-icons/md";
 
 const Footer = () => {
     return(
@@ -36,11 +38,11 @@ const Footer = () => {
                         <li>Video Tutorials</li>
                     </ul>
                     <div className={styles.socialMediaLogo}>
-                        <FaTwitter className={styles.twitter}/>
-                        <FaFacebook className={styles.facebook}/>
-                        <FaYoutube className={styles.youtube}/>
-                        <FaInstagram className={styles.instagram}/>
-                        <FaTiktok className={styles.tiktok}/>
+                        <FaTwitter className={styles.socialMedia_logo}/>
+                        <FaFacebook className={styles.socialMedia_logo}/>
+                        <FaYoutube className={styles.socialMedia_logo}/>
+                        <FaInstagram className={styles.socialMedia_logo}/>
+                        <FaTiktok className={styles.socialMedia_logo}/>
                     </div> 
 
                 </div>
@@ -48,6 +50,9 @@ const Footer = () => {
                 <div className={styles.logo_footer}>
                     <img src={LogoFooter} alt="logoFooter" className={styles.logo} />
                     <p className={styles.cleanCity}>Clean<span className={styles.city}>City</span></p>
+                </div>
+                <div className={styles.copyright_container}>
+                    <p><MdOutlineCopyright style={{position: "relative", top: "2px"}}/>2024 Clean City Solutions Ltd. <span>Terms of Use</span><span>Privacy policy</span></p>
                 </div>
             </div>
         </>

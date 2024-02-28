@@ -60,3 +60,46 @@ ul>span{
     position: relative;
     top: 4px;
 }
+@media screen and (max-width: 1440px) {
+    .navbar{
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+    .navbar1 img{
+        /* border: 1px solid black; */
+        position: relative;
+        right: 80px;     
+    }
+  .cleanCity{
+    /* border: 1px solid black; */
+    position: relative;
+    right: 80px;  
+    }
+    .log_in{
+        /* border: 1px solid black; */
+        width: 70px;
+
+    }
+    .list{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        position: relative;
+        right: 100px;
+        /* border: 1px solid black; */
+    }
+    .dropdown{
+        display: flex;
+        /* border: 1px solid black; */
+    }
+    .navbar2{
+        /* border: 1px solid black; */
+        position: relative;
+        left: 100px;
+        display: flex;
+        gap: 30px;
+
+    }
+}
+  

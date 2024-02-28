@@ -5,7 +5,7 @@ import styles from './WelcomePage.module.css'
 const WelcomePage = () => {
   const firstName = useSelector((state)=> state.Clean_City)
   // const firstName = accountName ?  accountName.name : ""
-  console.log(firstName.formInput)
+  // console.log(firstName.formInput)
 
 
   return (

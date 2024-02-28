@@ -7,6 +7,9 @@
     background-size: cover;
     mix-blend-mode: multiply;
     background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     /* border: 1px solid black; */
 }
 /* .homepage_container{
@@ -44,3 +47,5 @@
     /* border: 1px solid white; */
     left: 10.7%;
 }
+
+  
