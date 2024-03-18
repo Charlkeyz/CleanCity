@@ -11,7 +11,7 @@ const WelcomePage = () => {
   return (
     <main className={styles.welcomeStyling}>
         <section className={styles.welcome_container}>
-            <h1>Welcome to Clean City! {firstName.formInput.name}</h1>
+            <h1>Welcome to Clean City! {firstName.formInput.name} {firstName.formInput.surname}</h1>
             <p>Let's set up your profile in a few easy steps!</p>
             <div className={styles.confirm_pickup}>
                 <p>Confirm your pickup location</p>

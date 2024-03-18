@@ -52,7 +52,7 @@ const Navbar = () => {
                         </div>
                 </div>
                 <div className={styles.navbar2}>
-                        <ul className={styles.log_in}>Log in</ul>
+                <Link to='/log_in' style={{textDecoration: "none"}}><ul className={styles.log_in}>Log in</ul></Link>
                         <Link to="/sign_up" style={{textDecoration: "none"}}><Button>Create Account</Button></Link>
                 </div>
 

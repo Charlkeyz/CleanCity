@@ -31,7 +31,9 @@
     width: 40px;
     height: 40px;
     transform: rotate(0deg);
-    transition: transform 0.2s ease;  
+    transition: transform 0.2s ease;
+    /* color: #0486A8; */
+
 }
 .increaseHeight{
     height: 180px;

@@ -8,7 +8,7 @@
     box-shadow: 0px -5px 30px 0px rgba(0, 0, 0, 0.15);
     position: fixed;
     top: 0;
-    width: 100vw;
+    width: 100%;
     z-index: 100;
 }
 .navbar1{
@@ -60,24 +60,25 @@ ul>span{
     position: relative;
     top: 4px;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1284px) {
     .navbar{
       display: flex;
       justify-content: space-between;
       padding: 20px;
+      background-color: red;
+    
     }
     .navbar1 img{
-        /* border: 1px solid black; */
+    
         position: relative;
         right: 80px;     
     }
   .cleanCity{
-    /* border: 1px solid black; */
+
     position: relative;
     right: 80px;  
     }
     .log_in{
-        /* border: 1px solid black; */
         width: 70px;
 
     }
@@ -87,14 +88,13 @@ ul>span{
         gap: 50px;
         position: relative;
         right: 100px;
-        /* border: 1px solid black; */
+
     }
     .dropdown{
         display: flex;
-        /* border: 1px solid black; */
+
     }
     .navbar2{
-        /* border: 1px solid black; */
         position: relative;
         left: 100px;
         display: flex;

@@ -89,3 +89,16 @@ button:hover{
 .finish_btn:hover{
     transition: none;
 }
+.aboutSignIn{
+    background-color: black;
+    width: 331px;
+    height: 53px;
+    border-radius: 0;
+}
+.aboutSignIn:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    border-radius: 0;
+    transition: 1s;
+}

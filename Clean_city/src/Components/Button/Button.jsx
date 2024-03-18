@@ -21,6 +21,8 @@ const Button = (props) => {
     }else if(btnStyling === "log_in"){
         btnStyles = styles.log_in_btn
     }
+    else if(btnStyling === "aboutSignIn")
+        btnStyles = styles.aboutSignIn
     return(
         
             <button className={btnStyles} onClick={next}>{children}</button>

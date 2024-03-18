@@ -5,6 +5,7 @@ import TypeOfBuilding from "./TypeOfBuilding/TypeOfBuilding"
 import WasteCollection from "./WasteCollectionPreference/WasteCollection";
 import WelcomePage from "./welcome_page/WelcomePage"
 import { FaArrowLeft } from "react-icons/fa";
+import { Link } from "react-router-dom";
  const AccountSetUp = () => {
 
   const [pageIndex, setPageIndex] = useState(0);
@@ -40,8 +41,10 @@ import { FaArrowLeft } from "react-icons/fa";
               <div className={styles.next_page}>
                 {
                   pageIndex === 2 ? (
-                    <Button btnStyling = "finish">Finish</Button>
-                  ) : (
+                    <Link to='/Dash_Board' style={{textDecoration: "none"}}>
+                      <Button btnStyling = "finish">Finish</Button>
+                    </Link>
+                    ) : (
                     <Button btnStyling = "next" next = {next}>Continue</Button>
                   )
                 }
