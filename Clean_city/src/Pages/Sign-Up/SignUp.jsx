@@ -2,20 +2,19 @@
  import { FcGoogle } from "react-icons/fc";
 import SignUpComponent from '../../Components/SignUp Component/SignUpComponent'
 import styles from './SignUp.module.css'
-import { Link } from 'react-router-dom';
 // import { useState } from 'react';
-import { useSelector } from 'react-redux';
-import { useState } from 'react';
+// import { useSelector } from 'react-redux';
+// import { useState } from 'react';
  const SignUp = () => {
 
-  const formFill = useSelector((state)=> state.Clean_City.formInput)
-  const [confirmInput, setConfirmInput] = useState(false)
+  // const formFill = useSelector((state)=> state.Clean_City.formInput)
+  // const [confirmInput, setConfirmInput] = useState(false)
 
-  function handleClick(){
-    setConfirmInput(true)
-  }
+  // function handleClick(){
+  //   setConfirmInput(true)
+  // }
 
-  const setFormFill = formFill.name !== "" && formFill.surname !== "" && formFill.email !== "" && formFill.password !== ""
+  // const setFormFill = formFill.name !== "" && formFill.surname !== "" && formFill.email !== "" && formFill.password !== ""
   
   
   return (
@@ -24,12 +23,8 @@ import { useState } from 'react';
           <section className={styles.background_container}>
             <img className={styles.image} src="/src/assets/BackgroundImages/Background_image.jpg" alt="Sign-Up image" />
             <div className={styles.create_account}>
-              <SignUpComponent setFormFill = {setFormFill} confirmInput = {confirmInput}/>
-              <div className={styles.buttons}>
-                <Link to = { setFormFill ? "/account_setup" : ""} style={{textDecoration: "none"}} onClick={handleClick}>
-                  <Button btnStyling = "create_account">Create your account</Button>
-                </Link>
-              </div>
+              <SignUpComponent/>
+              
               <div className={styles.continue}>
                   <div className={styles.line}></div>
                   <p>or continue with</p>

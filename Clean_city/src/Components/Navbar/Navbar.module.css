@@ -60,46 +60,5 @@ ul>span{
     position: relative;
     top: 4px;
 }
-@media screen and (max-width: 1284px) {
-    .navbar{
-      display: flex;
-      justify-content: space-between;
-      padding: 20px;
-      background-color: red;
+/* @media screen and (max-width: 500px)  */
     
-    }
-    .navbar1 img{
-    
-        position: relative;
-        right: 80px;     
-    }
-  .cleanCity{
-
-    position: relative;
-    right: 80px;  
-    }
-    .log_in{
-        width: 70px;
-
-    }
-    .list{
-        display: flex;
-        align-items: center;
-        gap: 50px;
-        position: relative;
-        right: 100px;
-
-    }
-    .dropdown{
-        display: flex;
-
-    }
-    .navbar2{
-        position: relative;
-        left: 100px;
-        display: flex;
-        gap: 30px;
-
-    }
-}
-  

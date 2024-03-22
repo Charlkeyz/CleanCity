@@ -33,15 +33,7 @@
     background-color: white;
     left: 233px;
 }
-.buttons{
-    width: 60%;
-    height: 20%;
-    display: flex;
-    position: relative;
-    align-items: center;
-    bottom: 100px;
-    /* border: 1px solid black; */
-}
+
 .continue{
     display: flex;
     justify-content: center;
@@ -83,9 +75,9 @@
 .termsConditions > p > span{
     color: #0486A8;
 }
-@media screen and (max-width: 1440px) {
+/* @media screen and (max-width: 1440px) {
     .create_account{
         position: absolute;
         left: 0px;
     }
-}
+} */

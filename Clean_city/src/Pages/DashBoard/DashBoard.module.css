@@ -17,12 +17,4 @@
     font-weight: 500;
     letter-spacing: 0.7px;
 }
-.dashboardData{
-    position: absolute;
-
-    bottom: 62%;
-    left: 15%;
-    display: flex;
-    gap: 80px;
-}
 

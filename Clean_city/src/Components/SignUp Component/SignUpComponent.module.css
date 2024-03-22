@@ -59,6 +59,15 @@
     cursor: pointer;
     /* border: 1px solid black; */
 }
+.buttons{
+    width: 60%;
+    height: 20%;
+    display: flex;
+    /* position: relative; */
+    align-items: center;
+    /* bottom: p; */
+    /* border: 1px solid black; */
+}
 
 /* .input_form > form > input:nth-child(4)[type="password"]::-webkit-password-saved {
     display: none;

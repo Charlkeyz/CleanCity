@@ -6,14 +6,24 @@ import { IoMdEye } from "react-icons/io";
 import { useDispatch, useSelector } from 'react-redux';
 import { setFormInput } from '../../Redux/slice/cleanCitySlice';
 import { Link } from 'react-router-dom';
+import Button from '../../Components/Button/Button'
+// import { useHistory } from 'react-router-dom';
+
+// import { Link } from 'react-router-dom';
+  // const formFill = useSelector((state)=> state.Clean_City.formInput)
 
 
-const SignUpComponent = ({setFormFill, confirmInput}) => {
+
+const SignUpComponent = () => {
   const [showPassword, setShowPassword] = useState(false)
   const dispatch = useDispatch()
   const inputForm = useSelector((state)=> state.Clean_City)
+  const formFill = useSelector((state)=> state.Clean_City.formInput)
+  
 
-console.log(confirmInput, setFormFill)
+
+
+  const setFormFill = formFill.name !== "" && formFill.surname !== "" && formFill.email !== "" && formFill.password !== ""
   
 
   function handlePasswordClick(){
@@ -22,10 +32,14 @@ console.log(confirmInput, setFormFill)
   function handleInputForm(e) {
     const {name, value} = e.target;
     dispatch(setFormInput({ name, value}))
-    // console.log(inputForm.formInput)
-
+    
   }
-
+  
+  // function handleClick(){
+  //   if(!setFormFill){
+  //     alert("Please fill in all fields")
+  //   }return
+  // }
   
   return (
     <main className={styles.input_form}>
@@ -40,7 +54,7 @@ console.log(confirmInput, setFormFill)
               name='name'
               value={inputForm.name}
               onInput={handleInputForm}
-               style={{border: confirmInput && !setFormFill && inputForm.name === "" ? "2px solid red" : ""}}
+            
               />
             <input 
               type="text" 
@@ -48,7 +62,7 @@ console.log(confirmInput, setFormFill)
               name='surname'
               value={inputForm.surname}
               onInput={handleInputForm}
-              style={{border: confirmInput && !setFormFill && inputForm.surname === "" ? "2px solid red" : ""}}
+          
               />
             <input 
               type="email" 
@@ -56,7 +70,7 @@ console.log(confirmInput, setFormFill)
               name='email'
               value={inputForm.email}
               onInput={handleInputForm}
-              style={{border: confirmInput && !setFormFill && inputForm.email === "" ? "2px solid red" : ""}}
+          
               />
             <input 
               type={showPassword ? "text" : "password"} 
@@ -64,9 +78,19 @@ console.log(confirmInput, setFormFill)
               name='password'
               value={inputForm.password}
               onInput={handleInputForm}
-              style={{border: confirmInput && !setFormFill && inputForm.password === "" ? "2px solid red" : ""}}
+          
               />
             <span className={styles.passwordEye} onClick={handlePasswordClick}>{showPassword ? <IoMdEye/> : <IoMdEyeOff/>}</span>
+
+            <div className={styles.buttons}>
+                <Link to = { setFormFill ? "/account_setup" : ""} style={{textDecoration: "none"}} onClick={() => {
+                    if (!setFormFill) {
+                      alert("Please fill in all fields");
+                    }
+                 }}>
+                  <Button btnStyling = "create_account" type = "submit">Create your account</Button>
+                </Link>
+              </div>
         </form>
         
     </main>

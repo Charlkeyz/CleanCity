@@ -102,3 +102,11 @@ button:hover{
     border-radius: 0;
     transition: 1s;
 }
+.collectionBtn{
+    width: 130px;
+    height: 40px;
+    background-color: #0486A8;
+    font-size: 14px;
+    line-height: 18.9px;
+    font-weight: 500;
+}

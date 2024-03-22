@@ -1,4 +1,4 @@
-import Logo from '../../assets/logo.svg'
+import Logo from '../../assets/Dashboard_icons/logo.svg'
 import Button from '../Button/Button'
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import styles from './Navbar.module.css'
